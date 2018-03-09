@@ -49,6 +49,32 @@ const settings: any = {
             end_session_on_fail: false,
             skip_testcases_on_fail: false,
         },
+        chrome: {
+			desiredCapabilities: {
+                browserName: 'chrome',
+                handlesAlerts: false,
+                javascriptEnabled: true,
+                acceptSslCerts: true,
+                acceptInsecureCerts: true,
+            },
+		},
+		firefox: {
+			desiredCapabilities: {
+				browserName: 'firefox',
+				marionette: true,
+				javascriptEnabled: true,
+                acceptSslCerts: true,
+                acceptInsecureCerts: true,
+			},
+        },
+        safari: {
+			desiredCapabilities: {
+				browserName: 'safari',
+				javascriptEnabled: true,
+                acceptSslCerts: true,
+                acceptInsecureCerts: true,
+			},
+		},
     },
 };
 
